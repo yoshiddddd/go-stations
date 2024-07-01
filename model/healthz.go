@@ -2,6 +2,8 @@ package model
 
 // A HealthzResponse expresses health check message.
 type HealthzResponse struct{
-	Message string
+	Message string `json:"message"`
 }
+
+
 
