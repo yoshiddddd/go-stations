@@ -8,6 +8,7 @@ import (
 
 	"github.com/TechBowl-japan/go-stations/db"
 	"github.com/TechBowl-japan/go-stations/handler/router"
+	"github.com/TechBowl-japan/go-stations/handler"
 )
 
 func main() {
@@ -52,6 +53,5 @@ func realMain() error {
 	mux := router.NewRouter(todoDB)
 	// TODO: サーバーをlistenする
 	http.ListenAndServe(port, mux)
-
 	return nil
 }
